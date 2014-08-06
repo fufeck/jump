@@ -1,24 +1,41 @@
 #jeu{
 	width: 400px;
-	height: 360px;
+	height: 600px;
 	border: 2px black solid;
 	overflow: hidden;
 	position: relative;
+	background-color: #CCFFFF;
 }
 
 .back{
 	z-index: 10;
-  	position: relative;
-}
-
-.bloc{
-	z-index: 50;
+	width: 400px;
+	height: 600px;
+	background-color: #CCFFFF;
   	position: absolute;
 }
 
-#player{
+.line{
+	z-index: 50;
+	width: 80px;
+	height: 60px;
+  	position: absolute;
+}
+
+#ball{
 	z-index: 100;
 	position: absolute;
-	top: 200px;
-	left: 200px;
+	width: 60px;
+	height: 60px;
+	top: 20px;
+	left: 180px;
+}
+
+#score{
+	position: relative;
+	width: 400px;
+	height: 50px;
+	font-size: 40px;
+	text-align: center;
+	border: 2px black solid;
 }
