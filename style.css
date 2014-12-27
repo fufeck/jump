@@ -1,3 +1,22 @@
+#start {
+	position: absolute;
+	z-index: 100;
+	background: #000;
+	opacity: 0.8;
+	width: 404px;
+	height: 658px;
+	text-align: center;
+}
+h1 {
+	padding-top: 200px;
+	color: #fff;
+}
+
+h4 {
+	padding-top: 100px;
+	color: #fff;
+}
+
 #jeu{
 	width: 400px;
 	height: 600px;
@@ -23,7 +42,7 @@
 }
 
 #ball{
-	z-index: 100;
+	z-index: 80;
 	position: absolute;
 	width: 60px;
 	height: 60px;

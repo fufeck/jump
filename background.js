@@ -21,28 +21,3 @@ function generat_map()
 	bac = (bac == 0) ? (1) : (0);
 	$(".back:eq("+bac+")").css('top', 0);
 }
-/*
-function animate_back()
-{
-		var v = 100;
-		if (player[3] < 300)
-			v -= 30;
-		if (player[3] < 200)
-			v -= 30;
-		if (player[3] < 100)
-			v -= 30;
-		console.log(player[3]+"--"+v);
-		$('.back').animate({top: '+=10'},v,function(){
-		if (parseInt($(".back:eq("+bac+")").css('top')) >= 600)
-    		generat_map();
-		animate_back();
-		});
-}
-
-function move_back()
-{
-	generat_map();
-	generat_map();
-//	animate_back();
-}
-*/

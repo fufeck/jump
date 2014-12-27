@@ -49,6 +49,12 @@ function move_ball()
 	}
 	player[3] += player[5];
 	player[2] += player[4];
+	if (player[3] > 650) {
+		$("#start").css({"opacity": 0.8});
+		$("#start h4").text("Your score is "+scoring);
+		scoring = 0;
+		return ;
+	}
 	$('#ball').animate({top: player[3], left: player[2]}, 10, function() {
 
 		var v = "+=2";
